@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import { Row, Col } from '../modules/helper'
 import AboutUs from './AboutUs'
 // import MidBanner from './MidBanner'
 import Virtues from './Virtues'
@@ -8,50 +9,70 @@ import trailer1 from '../images/trailer1.jpg'
 import trailer3 from '../images/trailer3.jpg'
 
 export default function Home() {
-  const [hoverPic, setHoverPic] = useState(trailer1)
+  const [pic, setPic] = useState(trailer1)
 
   return (
-    <div id='home-container'>
-      <div id='home-top'>
-        <div id='home-first'>
-          <div id='home-img-container'>
-            {/* <img
-              src={companylogo}
-              id='home-first-logo'
-              alt='company logo 1'
-            /> */}
-          </div>
-        </div>
-      </div>
-      <div id='home-mid'>
-        <div id='home-second'>
-          <div id='home-img-container-2'>
-            {/* <img
-              src={companylogo}
-              id='home-first-logo-2'
-              alt='company logo 2'
-            /> */}
-          </div>
-          <span>A Customer Service Driven Junk Removal Company</span>
-        </div>
-        <div id='home-mid-bot'>
-          <div id='home-third'>
-            <Link to='/pricing' id='home-third-button-1'>
-              <span>SEE PRICING</span>
+    <Col
+      m='10vh 0 0 0'
+    >
+
+      <Row
+        height='60vh'
+      >
+        <Row
+          flex='1'
+          justifyContent='center'
+          alignItems='center'
+        >
+          <img
+            src={companylogo}
+            alt='company logo 2'
+            style={{ height: '35vw' }}
+          />
+        </Row>
+
+        <Row
+          flex='1'
+        >
+          <Col
+            flex='1'
+            justifyContent='space-evenly'
+            alignItems='center'
+          >
+            <Link to='/pricing' onMouseEnter={() => setPic(trailer1)}>
+              <Row
+                p='2vw'
+                border='1px solid'
+              >SEE PRICING</Row>
             </Link>
-            <Link to='/booknow' id='home-third-button-2'>
-              <span>GET A QUOTE</span>
+            <Link to='/booknow' onMouseEnter={() => setPic(trailer3)}>
+              <Row
+                p='2vw'
+                border='1px solid'
+              >GET A QUOTE</Row>
             </Link>
-          </div>
-          <div id='home-fourth'>
-            {/* <img alt='trailer' src={hoverPic} /> */}
-          </div>
-        </div>
-      </div>
-      <div id='home-bot'>
+          </Col>
+          <Row
+            flex='4'
+            justifyContent='center'
+            alignItems='center'
+            // border='1px solid'
+          >
+            <img
+              alt='trailer'
+              src={pic}
+              style={{ height: '20vw' }}
+            />
+          </Row>
+        </Row>
+      </Row>
+
+      <Col
+        m='6vw 0 0 0'
+      >
         <AboutUs />
         <Virtues />
-      </div>
-    </div>
+      </Col>
+    </Col>
   )
 }

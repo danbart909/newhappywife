@@ -1,34 +1,39 @@
-import React, { Component } from 'react'
+import React from 'react'
+import { Row, Col } from '../modules/helper'
 import companylogo from '../images/companylogo.png'
 
-export default class TopNav extends Component {
-  render() {
-    return (
-      <div id='top-nav-container'>
-        <div id='top-nav'>
+export default function TopNav() {
+  return (
+    <Row>
 
-          <div id='top-nav-left'>
-            <img src={companylogo} alt='company logo' />
-          </div>
+        <Row
+          flex='1'
+          justifyContent='center'
+        >
+          <img
+            src={companylogo}
+            alt='company logo'
+            style={{ height: 120 }}
+          />
+        </Row>
 
-          <div id='top-nav-right'>
+        <Col
+          flex='7'
+          p='0 0.5vw 0 0'
+          alignItems='flex-end'
+          justifyContent='space-evenly'
+        >
+          <Row>A Customer Service Driven Junk Removal Company</Row>
 
-            <div id='top-nav-right-header'>
-              <span>A Customer Service Driven Junk Removal Company</span>
-            </div>
+          <Row>
+            <a href='tel:762-217-3303'><span>762.217.3303</span></a>
+          </Row>
 
-            <div id='top-nav-right-number'>
-              <a href='tel:762-217-3303'><span>762.217.3303</span></a>
-            </div>
+          <Row>
+            <a href='tel:762-217-3303'><i className="fas fa-phone"></i> Call </a><span> or </span><a href='sms:7622173303'> <i className="fas fa-comment-dots"></i> Text</a>
+          </Row>
+        </Col>
 
-            <div id='top-nav-right-phone-text'>
-              <a href='tel:762-217-3303'><i className="fas fa-phone"></i> Call </a><span> or </span><a href='sms:7622173303'> <i className="fas fa-comment-dots"></i> Text</a>
-            </div>
-
-          </div>
-
-        </div>
-      </div>
-    )
-  }
+    </Row>
+  )
 }

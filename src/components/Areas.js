@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
+import { Row, Col } from '../modules/helper'
 import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet';
-import $ from 'jquery'
 import Acworth from '../images/Acworth.jpg'
 import Austell from '../images/Austell.jpg'
 import Kennesaw from '../images/Kennesaw.jpg'
@@ -22,35 +22,64 @@ export default function Areas() {
         <title>Service Areas</title>
         <meta name="description" content="Happy Wife - Service Areas" />
       </Helmet>
-      <div id='area-container'>
-        <div id='service-areas'>
-          <div className='gD-title'>
-            <span>Our Service Areas</span>
-          </div>
+      <Col
+        alignItems='center'
+        textAlign='center'
+      >
 
-          <div id='areas-body'>
+        <Row
+          m='4vw 0'
+          p='2vw'
+          width='75%'
+          justifyContent='center'
+          border='1px solid'
+        >Our Service Areas</Row>
 
-            <div id='areas-list'>
-              <Link className='acworth' to='/areas/Acworth-Junk-Removal'><span>Acworth</span></Link>
-              <Link className='austell' to='/areas/Austell-Junk-Removal'><span>Austell</span></Link>
-              <Link className='kennesaw' to='/areas/Kennesaw-Junk-Removal'><span>Kennesaw</span></Link>
-              <Link className='marietta' to='/areas/Marietta-Junk-Removal'><span>Marietta</span></Link>
-              <Link className='mableton' to='/areas/Mableton-Junk-Removal'><span>Mableton</span></Link>
-              <Link className='powdersprings' to='/areas/PowderSprings-Junk-Removal'><span>Powder Springs</span></Link>
-              <Link className='roswell' to='/areas/Roswell-Junk-Removal'><span>Roswell</span></Link>
-              <Link className='smyrna' to='/areas/Smyrna-Junk-Removal'><span>Smyrna</span></Link>
-              <Link className='vinings' to='/areas/Vinings-Junk-Removal'><span>Vinings</span></Link>
-              <Link className='woodstock' to='/areas/Woodstock-Junk-Removal'><span>Woodstock</span></Link>
-            </div>
+        <Row
+          width='100%'
+          m='0 5vw'
+          justifyContent='space-evenly'
+          // border='1px solid'
+        >
+          <Col
+            alignItems='center'
+            // border='1px solid green'
+          >
+            <City onMouseEnter={() => setMap(Acworth)}>Acworth</City>
+            <City onMouseEnter={() => setMap(Austell)}>Austell</City>
+            <City onMouseEnter={() => setMap(Kennesaw)}>Kennesaw</City>
+            <City onMouseEnter={() => setMap(Marietta)}>Marietta</City>
+            <City onMouseEnter={() => setMap(Mableton)}>Mableton</City>
+            <City onMouseEnter={() => setMap(PowderSprings)}>Powder Springs</City>
+            <City onMouseEnter={() => setMap(Roswell)}>Roswell</City>
+            <City onMouseEnter={() => setMap(Smyrna)}>Smyrna</City>
+            <City onMouseEnter={() => setMap(Vinings)}>Vinings</City>
+            <City onMouseEnter={() => setMap(Woodstock)}>Woodstock</City>
+          </Col>
 
-            <div id='areas-map-container'>
-              <div id='areas-map'>{map}</div>
-            </div>
+          <Row>
+            <img
+              alt='city'
+              src={map}
+              style={{ height: 570 }}
+            />
+          </Row>
+        </Row>
 
-          </div>
-
-        </div>
-      </div>
+      </Col>
     </>
   )
+}
+
+const City = (props) => {
+  return (<Row
+    {...props}
+    width='80%'
+    justifyContent='center'
+    m='.5vw 1vw'
+    p='.5vw'
+    border='1px solid'
+  >
+    {props.children}
+  </Row>)
 }
