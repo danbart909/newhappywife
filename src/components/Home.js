@@ -5,11 +5,12 @@ import AboutUs from './AboutUs'
 // import MidBanner from './MidBanner'
 import Virtues from './Virtues'
 import companylogo from '../images/companylogo.png'
-import trailer1 from '../images/trailer1.jpg'
-import trailer3 from '../images/trailer3.jpg'
+import hometrailer1 from '../images/hometrailer1.jpg'
+import hometrailer2 from '../images/hometrailer2.jpg'
+import hometrailer3 from '../images/hometrailer3.jpg'
 
 export default function Home() {
-  const [pic, setPic] = useState(trailer1)
+  const [pic, setPic] = useState(hometrailer2)
 
   return (
     <Col
@@ -39,17 +40,17 @@ export default function Home() {
             justifyContent='space-evenly'
             alignItems='center'
           >
-            <Link to='/pricing' onMouseEnter={() => setPic(trailer1)}>
+            <Link to='/pricing' onMouseEnter={() => setPic(hometrailer1)}>
               <Row
                 p='2vw'
                 border='1px solid'
-              >SEE PRICING</Row>
+              >See Pricing</Row>
             </Link>
-            <Link to='/booknow' onMouseEnter={() => setPic(trailer3)}>
+            <Link to='/booknow' onMouseEnter={() => setPic(hometrailer3)}>
               <Row
                 p='2vw'
                 border='1px solid'
-              >GET A QUOTE</Row>
+              >Get a Quote</Row>
             </Link>
           </Col>
           <Row
