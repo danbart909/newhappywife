@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import { Helmet } from 'react-helmet'
-import { Row, Col } from '../modules/helper'
+import { Row, Col, TitleBox, C1, C2 } from '../modules/helper'
 import { TextField, Button } from '@mui/material'
+import carry1 from '../images/carry1.jpg'
 
 export default function BookNow() {
   return (
@@ -11,36 +12,52 @@ export default function BookNow() {
         <meta name="description" content="Happy Wife - Book Now - Booking Form" />
       </Helmet>
       <Col
+        p='0 0 6vh 0'
         alignItems='center'
+        style={{
+          backgroundImage: `url(${carry1})`,
+          backgroundPosition: 'center',
+          backgroundSize: 'cover',
+          backgroundAttachment: 'fixed'
+        }}
+        color={C1}
       >
-        <Row
-          m='4vw 0'
-          p='2vw'
-          width='75%'
-          justifyContent='center'
+        <TitleBox>Book Now</TitleBox>
+
+        <Col
+          m='0 0 4vw 0'
+          p='4vh'
+          gap='4vh'
+          backgroundColor='rgba(0,0,0,.8)'
+          alignItems='center'
           border='1px solid'
-        >Book Now</Row>
-
-        <Row m='0 0 4vw 0'>Please complete the form below and we will reply promptly. Let us know how we can best serve you.</Row>
+        >
+          <Row>Our Phone Number is 762.217.3303. Please text or leave a message if there is no answer.</Row>
+          <Row>Our email is henry@prettygoodinc.com</Row>
+          <Row>If you don't want to use a phone or email, you can complete the form below and we will reply at first chance.</Row>
+        </Col>
 
         <Row
-          width='70%'
+          width='60%'
           component='form'
           action="https://formspree.io/f/mpzbword"
           method="POST"
           justifyContent='center'
+          backgroundColor='rgba(0,0,0,.8)'
         >
           <Row
             component='fieldset'
             width='100%'
             justifyContent='center'
           >
-            <legend>Contact Form</legend>
             <Col
-              width='60%'
+              width='80%'
               alignSelf='center'
+              p='2vw'
               m='2vh 0'
               gap='5vh'
+              backgroundColor='white'
+
             >
               <TextField
                 label='name'
@@ -67,7 +84,10 @@ export default function BookNow() {
                 multiline
                 rows='5'
               />
-              <Button component='label'>
+              <Button
+                component='label'
+                variant='outlined'
+              >
                 Send Email
                 <input hidden type='submit' name='send' />
               </Button>

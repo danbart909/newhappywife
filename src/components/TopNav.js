@@ -1,10 +1,11 @@
 import React from 'react'
-import { Row, Col } from '../modules/helper'
+import { Row, Col, Title, C1, C2 } from '../modules/helper'
+import { Link } from '@mui/material'
 import companylogo from '../images/companylogo.png'
 
 export default function TopNav() {
   return (
-    <Row>
+    <Row style={{ background: `linear-gradient(to right, #acccc6, #524d5c` }}>
 
         <Row
           flex='1'
@@ -23,14 +24,35 @@ export default function TopNav() {
           alignItems='flex-end'
           justifyContent='space-evenly'
         >
-          <Row>A Customer Service Driven Junk Removal Company</Row>
+          <Title
+            textAlign='right'
+            color={C1}
+          >A Customer Service Driven Junk Removal Company</Title>
 
           <Row>
-            <a href='tel:762-217-3303'><span>762.217.3303</span></a>
+            <Link
+              href='tel:762-217-3303'
+              underline='hover'
+              color={C1}
+            >762.217.3303</Link>
           </Row>
 
-          <Row>
-            <a href='tel:762-217-3303'><i className="fas fa-phone"></i> Call </a><span> or </span><a href='sms:7622173303'> <i className="fas fa-comment-dots"></i> Text</a>
+          <Row color={C1}>
+            <Link
+              href='tel:762-217-3303'
+              underline='hover'
+              color={C1}
+            >
+              <i className="fas fa-phone"/> Call 
+            </Link>
+            <Row m='0 .5vw'>or</Row>
+            <Link
+              href='sms:7622173303'
+              underline='hover'
+              color={C1}
+            >
+              <i className="fas fa-comment-dots"/> Text
+            </Link>
           </Row>
         </Col>
 

@@ -1,6 +1,7 @@
 import React from 'react'
-import { Row, Col } from '../modules/helper'
+import { Row, Col, Title, TitleBox, C1, C2 } from '../modules/helper'
 import { Helmet } from 'react-helmet'
+import carry2 from '../images/carry2.jpg'
 
 export default function Services() {
   return (
@@ -12,43 +13,49 @@ export default function Services() {
       <Col
         alignItems='center'
         textAlign='center'
+        style={{
+          backgroundImage: `url(${carry2})`,
+          backgroundPosition: 'center',
+          backgroundSize: 'cover',
+          backgroundAttachment: 'fixed'
+        }}
+        color={C1}
       >
       
-        <Row
-          m='4vw 0'
-          p='2vw'
-          width='75%'
-          justifyContent='center'
-          border='1px solid'
-        >Our Services</Row>
+        <TitleBox>Our Services</TitleBox>
 
         <Row
-          // m='0 0 4vw 0'
-          p='2vw'
-          // border='1px solid'
+          m='0 7vw'
+          p='1vw 6vw'
+          backgroundColor='rgba(0,0,0,.8)'
+          border='1px solid'
         >Happy Wife Junk Service can haul just about any kind of junk you can imagine. From large mirrors and windows, to old planks of wood, to bulky mattresses and couches, we've got you covered. The only junk we can't handle are hazardous materials, since they require a specialized form of disposal. We break up our junk disposal options into two main categories: Commercial junk and Residential junk removal</Row>
 
         <Row
-          p='6vh 0'
+          p='3vw 0'
           // border='1px solid'
         >
           <Col
             m='4vh 2vw'
+            p='2vw'
             gap='3vw'
             alignItems='center'
-            // border='1px solid'
+            backgroundColor='rgba(0,0,0,.8)'
+            border='1px solid'
           >
-            <Row>Commercial Junk Removal</Row>
+            <Title>Commercial Junk Removal</Title>
             <Row>Construction sites, office spaces, and warehouses can benefit greatly from hiring professional junk haulers to handle their garbage or unwanted materials. It's important for businesses to keep their office spaces looking uncluttered and tidy, and it can be a challenge to clear out rooms full of old computers, monitors, tables, office furnishings, etc. Construction crews will rest easy knowing that their accumulated debris will not overflow into neighboring yards, which could warrant hefty fines.</Row>
           </Col>
 
           <Col
             m='4vh 2vw'
+            p='2vw'
             gap='3vw'
             alignItems='center'
-            // border='1px solid'
+            backgroundColor='rgba(0,0,0,.8)'
+            border='1px solid'
           >
-            <Row>Residential Junk Removal</Row>
+            <Title>Residential Junk Removal</Title>
             <Row>We do our best to keep our homes clean and tidy, but it's common for junk to accumulate in the storage spaces of our homes. Old exercise equipment, not quite broken tv sets from the 80s, boxes of clothes that we've given up finding an occasion to wear; it's in these moments that our junk removal crew will be there to give you a hand. The experts at Happy Wife Junk Removal are always sure to treat your home with respect and will never track dirt into your living spaces.
             </Row>
           </Col>

@@ -1,26 +1,33 @@
-import React, { Component } from 'react'
+import React from 'react'
+import { Row, Col, Title, C1, C2 } from '../modules/helper'
 
-export default class PrivacyPolicy extends Component {
-  render() {
-    return (
-      <>
-       <div id='aboutus-container'>
+export default function PrivacyPolicy() {
+  return (
+    <>
+      <Row
+        width='100%'
+      >
 
-          <div id='aboutus' className='aboutus-box'>
-            <div id='aboutus-1' className='aboutus-title'>
-              <span>Privacy Policy for wrkr and Turtle Race!</span>
-            </div>
-            <div className='aboutus-hr'>
-              <hr />
-            </div>
-            <div id='aboutus-2' className='aboutus-text'>
-              <span className='aboutus-text'>All information is kept to the Google Firebase system and none of it is used to identify anybody nor is it sold for profit.</span>
-              <span className='aboutus-text2'>Pretty Good Inc. © 2022</span>
-            </div>
-          </div>
+        <Col
+          m='10vw 0'
+          gap='2vw'
+          width='100%'
+          alignItems='center'
+        >
+          <Row>Privacy Policy for wrkr and Turtle Race!</Row>
 
-        </div> 
-      </>
-    )
-  }
+          <hr />
+
+          <Col
+            alignItems='center'
+            gap='2vw'
+          >
+            <Row>All information is kept to the Google Firebase system and none of it is used to identify anybody nor is it sold for profit.</Row>
+            <Row>Pretty Good Inc. © 2022</Row>
+          </Col>
+        </Col>
+
+      </Row> 
+    </>
+  )
 }

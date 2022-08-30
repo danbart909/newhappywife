@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Row, Col } from '../modules/helper'
+import { Row, Col, Title, TitleBox, C1, C2 } from '../modules/helper'
 import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet';
 import Acworth from '../images/Acworth.jpg'
@@ -12,6 +12,7 @@ import Roswell from '../images/Roswell.jpg'
 import Smyrna from '../images/Smyrna.jpg'
 import Vinings from '../images/Vinings.jpg'
 import Woodstock from '../images/Woodstock.jpg'
+import junk2 from '../images/junk2.jpg'
 
 export default function Areas() {
   const [map, setMap] = useState(Marietta)
@@ -25,25 +26,32 @@ export default function Areas() {
       <Col
         alignItems='center'
         textAlign='center'
+        style={{
+        backgroundImage: `url(${junk2})`,
+        backgroundPosition: 'center',
+        backgroundSize: 'cover',
+        backgroundAttachment: 'fixed'
+      }}
+      color={C1}
       >
 
-        <Row
-          m='4vw 0'
-          p='2vw'
-          width='75%'
-          justifyContent='center'
+        <TitleBox>Our Areas of Service</TitleBox>
+
+        {/* <Row
+          m='0 7vw 3vw'
+          p='1vw 6vw'
+          backgroundColor='rgba(0,0,0,.8)'
           border='1px solid'
-        >Our Service Areas</Row>
+        >price of gas and such</Row> */}
 
         <Row
           width='100%'
-          m='0 5vw'
+          p='0 0 5vw 5vw'
           justifyContent='space-evenly'
-          // border='1px solid'
         >
           <Col
+            flex='1'
             alignItems='center'
-            // border='1px solid green'
           >
             <City onMouseEnter={() => setMap(Acworth)}>Acworth</City>
             <City onMouseEnter={() => setMap(Austell)}>Austell</City>
@@ -57,11 +65,15 @@ export default function Areas() {
             <City onMouseEnter={() => setMap(Woodstock)}>Woodstock</City>
           </Col>
 
-          <Row>
+          <Row
+            flex='3'
+            justifyContent='center'
+            alignItems='center'
+          >
             <img
               alt='city'
               src={map}
-              style={{ height: 570 }}
+              style={{ height: '40vw' }}
             />
           </Row>
         </Row>
@@ -72,14 +84,16 @@ export default function Areas() {
 }
 
 const City = (props) => {
-  return (<Row
+  return (<Title
     {...props}
     width='80%'
     justifyContent='center'
     m='.5vw 1vw'
     p='.5vw'
     border='1px solid'
+    backgroundColor='rgba(0,0,0,.8)'
+    sx={{ '&:hover': { backgroundColor: C2 } }}
   >
     {props.children}
-  </Row>)
+  </Title>)
 }

@@ -1,27 +1,26 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-import { Row, Col } from '../modules/helper'
+import { Row, Col, Title, C1, C2 } from '../modules/helper'
 import { Box } from '@mui/material'
 
 export default class Footer extends Component {
   render() {
     return (
       <Row
-        // width='100vw'
-        m='4vw 0 0 0'
-        p='0 0 2vw 0'
-        border='1px solid'
-        // sx={{ width: '100%' }}
+        p='0 0 2vh 0'
+        borderTop='1px solid'
+        backgroundColor={C2}
+        color={C1}
       >
 
           <Col
             flex='1'
-            p='1vw 0 0 0'
-            gap='1vw'
+            p='3vh 0 0 0'
+            gap='4vh'
             alignItems='center'
             // border='1px solid'
           >
-            <Row>Our Info</Row>
+            <Title>Our Info</Title>
   
             <Col alignItems='center'>
               <Row>Pretty Good Inc, DBA</Row>
@@ -41,16 +40,17 @@ export default class Footer extends Component {
   
           <Col
             flex='1'
-            p='1vw 0 0 0'
-            gap='1vw'
+            p='3vh 0 0 0'
+            gap='4vh'
             alignItems='center'
+            textAlign='center'
             // border='1px solid'
           >
-            <Row>Our Services</Row>
+            <Title>Our Services</Title>
   
             <Col
               alignItems='center'
-              gap='.3vw'
+              gap='.5vh'
             >
               <Row>Appliance Removal</Row>
               <Row>Basement Clean Out</Row>
@@ -72,16 +72,16 @@ export default class Footer extends Component {
   
           <Col
             flex='1'
-            p='1vw 0 0 0'
-            gap='1vw'
+            p='3vh 0 0 0'
+            gap='4vh'
             alignItems='center'
             // border='1px solid'
           >
-            <Row>Our Areas</Row>
+            <Title>Our Areas</Title>
   
             <Col
               alignItems='center'
-              gap='.3vw'
+              gap='.5vh'
             >
               <Row>Acworth</Row>
               <Row>Austell</Row>

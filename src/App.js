@@ -9,7 +9,7 @@ import Services from './components/Services'
 import Pricing from './components/Pricing'
 import BookNow from './components/BookNow'
 import Footer from './components/Footer'
-// import PrivacyPolicy from './components/PrivacyPolicy'
+import PrivacyPolicy from './components/PrivacyPolicy'
 // import ScrollToTop from './modules/ScrollToTop'
 // import FooterTabs from './modules/FooterTabs'
 // import Acworth from '../../newhappywife/src/pages/areas/Acworth'
@@ -64,11 +64,11 @@ export default function App() {
       </Sticky>
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='services' element={<Services />}>
-        </Route>
+        <Route path='services' element={<Services />} />
         <Route path='areas' element={<Areas />} />
         <Route path='pricing' element={<Pricing />} />
         <Route path='booknow' element={<BookNow />} />
+        <Route path='privacypolicy' element={<PrivacyPolicy />} />
       </Routes>
       <Footer />
     </>
