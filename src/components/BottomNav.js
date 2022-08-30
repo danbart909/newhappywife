@@ -4,11 +4,11 @@ import { NavLink } from 'react-router-dom'
 import { Link } from '@mui/material'
 
 export default function BottomNav() {
-  const [homeLink, setHome] = useState(false)
-  const [areasLink, setAreas] = useState(false)
-  const [servicesLink, setServices] = useState(false)
-  const [pricingLink, setPricing] = useState(false)
-  const [bookLink, setBook] = useState(false)
+  // const [homeLink, setHome] = useState(false)
+  // const [areasLink, setAreas] = useState(false)
+  // const [servicesLink, setServices] = useState(false)
+  // const [pricingLink, setPricing] = useState(false)
+  // const [bookLink, setBook] = useState(false)
 
   const list = [
     ['/', 'Home'],

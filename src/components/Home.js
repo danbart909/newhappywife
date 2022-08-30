@@ -58,8 +58,11 @@ export default function Home() {
               <Title
                 p='1vw'
                 border='1px solid'
-                backgroundColor={C2}
+                // backgroundColor={C2}
                 color={C1}
+                sx={{ '&:hover': {
+                  backgroundColor: C2,
+                } }}
               >See Pricing</Title>
             </Link>
             <Link
@@ -70,8 +73,11 @@ export default function Home() {
               <Title
                 p='1vw'
                 border='1px solid'
-                backgroundColor={C2}
+                // backgroundColor={C2}
                 color={C1}
+                sx={{ '&:hover': {
+                  backgroundColor: C2,
+                } }}
               >Get a Quote</Title>
             </Link>
           </Col>
