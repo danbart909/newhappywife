@@ -60,7 +60,7 @@ export default function Pricing() {
             }}
           >
             <Row>A full load is almost always large enough to clean out the excess junk from a 5 person, 3200 sq ft house!</Row>
-            <Row>Our ability to pick up "one or two" items, or a "small amount", is strongly location-dependent. Please contact us for more information.</Row>
+            <Row>Our ability to pick up "one or two" items or a "small amount" is strongly location-dependent. Please contact us for more information.</Row>
             <Row
               p='2vw 0'
               width='100%'
