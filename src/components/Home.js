@@ -25,7 +25,7 @@ export default function Home() {
     >
 
       <Row
-        m='6vw 0 0 0'
+        m='4vw 0 0 0'
         backgroundColor='rgba(0,0,0,.8)'
       >
         <Row
@@ -97,7 +97,7 @@ export default function Home() {
       </Row>
 
       <Row
-        m='6vw 10vw 0'
+        m='4vw 10vw 0'
         p='1vw 6vw'
         justifyContent='center'
         textAlign='center'
