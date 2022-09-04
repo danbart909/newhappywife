@@ -1,14 +1,9 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Row, C1, C2 } from '../modules/helper'
 import { NavLink } from 'react-router-dom'
 import { Link } from '@mui/material'
 
 export default function BottomNav() {
-  // const [homeLink, setHome] = useState(false)
-  // const [areasLink, setAreas] = useState(false)
-  // const [servicesLink, setServices] = useState(false)
-  // const [pricingLink, setPricing] = useState(false)
-  // const [bookLink, setBook] = useState(false)
 
   const list = [
     ['/', 'Home'],
@@ -75,12 +70,3 @@ export default function BottomNav() {
     </Row>
   )
 }
-
-{/* <div id='bottom-nav-right'>
-  <a href='http://www.facebook.com/happywifejunkservice' target='_blank'><i className='fab fa-facebook' id='facebook-button' role='link'></i></a>
-  <a href='' target='_blank'><i className='fab fa-twitter' id='twitter-button' role='link'></i></a>
-  <a href='https://g.page/HappyWife?gm' target='_blank'><i className='fab fa-google' id='google-button' role='link'></i></a>
-  <a href='' target='_blank'><i className='fab fa-linkedin' id='linkedin-button' role='link'></i></a>
-  <a href='' target='_blank'><i className='fab fa-youtube' id='youtube-button' role='link'></i></a>
-  <a href='' target='_blank'><i className='fas fa-envelope' id='email-button' role='link'></i></a>
-</div> */}

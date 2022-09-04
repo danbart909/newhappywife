@@ -27,12 +27,12 @@ export default function Areas() {
         alignItems='center'
         textAlign='center'
         style={{
-        backgroundImage: `url(${junk2})`,
-        backgroundPosition: 'center',
-        backgroundSize: 'cover',
-        backgroundAttachment: 'fixed'
-      }}
-      color={C1}
+          backgroundImage: `url(${junk2})`,
+          backgroundPosition: 'center',
+          backgroundSize: 'cover',
+          backgroundAttachment: 'fixed'
+        }}
+        color={C1}
       >
 
         <TitleBox>Our Areas of Service</TitleBox>

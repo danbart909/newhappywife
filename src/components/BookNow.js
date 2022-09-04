@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Helmet } from 'react-helmet'
-import { Row, Col, TitleBox, C1, C2 } from '../modules/helper'
+import { Row, Col, TitleBox, C1 } from '../modules/helper'
 import { TextField, Button } from '@mui/material'
 import carry1 from '../images/carry1.jpg'
 
