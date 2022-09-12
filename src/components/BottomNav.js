@@ -42,19 +42,26 @@ export default function BottomNav() {
           height='100%'
           justifyContent='center'
           alignItems='center'
-          transition='1s'
+          style={{ transition: '0.5s' }}
           sx={{ '&:hover': {
             backgroundColor: C2,
             color: C1,
           } }}
-        >{x[1]}</Row>
+        >
+          <Row
+            sx={{ '&:hover': {
+              borderBottom: `1px solid ${C1}`,
+              padding: '0 0 2px 0'
+            } }}
+          >{x[1]}</Row>
+        </Row>
       </NavLink>
     ))
     return html
   }
 
   return (
-    <Row height='4vh'>
+    <Row height='5vh'>
       {navList()}
       <Row
         flex='1'

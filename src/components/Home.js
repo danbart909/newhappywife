@@ -60,6 +60,7 @@ export default function Home() {
                 border='1px solid'
                 // backgroundColor={C2}
                 color={C1}
+                style={{ transition: '0.5s' }}
                 sx={{ '&:hover': {
                   backgroundColor: C2,
                 } }}
@@ -75,6 +76,7 @@ export default function Home() {
                 border='1px solid'
                 // backgroundColor={C2}
                 color={C1}
+                style={{ transition: '0.5s' }}
                 sx={{ '&:hover': {
                   backgroundColor: C2,
                 } }}

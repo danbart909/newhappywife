@@ -60,7 +60,9 @@ export default function Pricing() {
             }}
           >
             <Row>A full load is almost always large enough to clean out the excess junk from a 5 person, 3200 sq ft house!</Row>
+
             <Row>Our ability to pick up "one or two" items or a "small amount" is strongly location-dependent. Please contact us for more information.</Row>
+
             <Row
               p='2vw 0'
               width='100%'
@@ -70,10 +72,12 @@ export default function Pricing() {
                 setPic2(pile2)
               }}
               border='1px solid'
+              style={{ transition: '0.5s' }}
               sx={{ '&:hover': {
                 backgroundColor: C2
               } }}
             >A 1/3 load is $250</Row>
+
             <Row
               p='2vw 0'
               width='100%'
@@ -83,10 +87,12 @@ export default function Pricing() {
                 setPic2(pile3)
               }}
               border='1px solid'
+              style={{ transition: '0.5s' }}
               sx={{ '&:hover': {
                 backgroundColor: C2
               } }}
             >A 2/3 load is $375</Row>
+
             <Row
               p='2vw 0'
               width='100%'
@@ -96,10 +102,12 @@ export default function Pricing() {
                 setPic2(pile4)
               }}
               border='1px solid'
+              style={{ transition: '0.5s' }}
               sx={{ '&:hover': {
                 backgroundColor: C2
               } }}
             >A full load is $500</Row>
+            
             <Row>We only charge you for what you use!</Row>
           </Col>
 

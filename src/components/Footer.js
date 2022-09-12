@@ -52,7 +52,6 @@ export default class Footer extends Component {
               alignItems='center'
               gap='.5vh'
             >
-              <Row>Appliance Removal</Row>
               <Row>Basement Clean Out</Row>
               <Row>Garage Clean Out</Row>
               <Row>Household Junk Removal</Row>
@@ -62,11 +61,9 @@ export default class Footer extends Component {
               <Row>Office Junk Removal</Row>
               <Row>Storage Unit Clean Out</Row>
               <Row>Warehouse Clean Out</Row>
-              <Row>Couth Removal</Row>
-              <Row>Dresser Removal</Row>
-              <Row>Entertainment Center Removal</Row>
               <Row>Table and Chairs Removal</Row>
               <Row>TV Removal</Row>
+              <Row>...and more!</Row>
             </Col>
           </Col>
   
