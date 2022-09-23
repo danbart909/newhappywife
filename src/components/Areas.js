@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Row, Col, Title, TitleBox, C1, C2 } from '../modules/helper'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet';
 import Acworth from '../images/Acworth.jpg'
 import Austell from '../images/Austell.jpg'

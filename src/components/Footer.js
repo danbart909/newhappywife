@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import { Row, Col, Title, C1, C2 } from '../modules/helper'
-import { Box } from '@mui/material'
+// import { Box } from '@mui/material'
 
 export default class Footer extends Component {
   render() {
