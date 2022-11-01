@@ -34,7 +34,8 @@ export default class Footer extends Component {
   
             <Col alignItems='center'>
               <Row>henry@prettygoodinc.com</Row>
-              <Row>762.217.3303</Row>
+              <Row>Phone Unavailable at This Time</Row>
+              {/* <Row>762.217.3303</Row> */}
             </Col>
           </Col>
   

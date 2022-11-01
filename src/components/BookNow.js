@@ -32,7 +32,7 @@ export default function BookNow() {
           alignItems='center'
           border='1px solid'
         >
-          <Row>Our Phone Number is 762.217.3303. Please text or leave a message if there is no answer.</Row>
+          {/* <Row>Our Phone Number is 762.217.3303. Please text or leave a message if there is no answer.</Row> */}
           <Row>Our email is henry@prettygoodinc.com</Row>
           <Row>If you don't want to use a phone or email, you can complete the form below and we will reply at first chance.</Row>
         </Col>

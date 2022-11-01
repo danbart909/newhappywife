@@ -29,15 +29,19 @@ export default function TopNav() {
             color={C1}
           >A Customer Service Driven Junk Removal Company</Title>
 
-          <Row>
+          {/* <Row>
             <Link
               href='tel:762-217-3303'
               underline='hover'
               color={C1}
             >762.217.3303</Link>
-          </Row>
+          </Row> */}
 
-          <Row color={C1}>
+          <Row>Phone Unavailable at This Time</Row>
+
+          <Row color={C1}>Email: henry@prettygoodinc.com</Row>
+
+          {/* <Row color={C1}>
             <Link
               href='tel:762-217-3303'
               underline='hover'
@@ -53,7 +57,7 @@ export default function TopNav() {
             >
               <i className="fas fa-comment-dots"/> Text
             </Link>
-          </Row>
+          </Row> */}
         </Col>
 
     </Row>
