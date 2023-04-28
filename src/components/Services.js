@@ -24,13 +24,23 @@ export default function Services() {
       
         <TitleBox>Our Services</TitleBox>
 
-        <Row
+        <Col
           m='0 7vw'
-          p='1vw 6vw'
+          p='2vw 6vw'
           backgroundColor='rgba(0,0,0,.9)'
           border='1px solid'
           borderRadius='10px'
-        >Happy Wife Junk Service can haul just about any kind of junk you can imagine. From large mirrors and windows, to old planks of wood, to bulky mattresses and couches, we've got you covered. The only junk we can't handle are hazardous materials, since they require a specialized form of disposal. We break up our junk disposal options into two main categories: Commercial junk and Residential junk removal</Row>
+        >
+          <Row>Happy Wife Junk Service can haul just about any kind of junk you can imagine. From large mirrors and windows, to old planks of wood, to bulky mattresses and couches, we've got you covered. The only junk we can't handle are hazardous materials, since they require a specialized form of disposal. We break up our junk disposal options into two main categories: Commercial junk and Residential junk removal.</Row>
+          <Row
+            p='3vw 0 0 0'
+            justifyContent='center'
+          >We do not offer recycling services at this time.</Row>
+          <Row
+            p='3vw 0 0 0'
+            justifyContent='center'
+          >We offer bulk trash removal, not the recycling of individual items.</Row>
+        </Col>
 
         <Row
           p='3vw 0'
