@@ -27,8 +27,9 @@ export default function Services() {
         <Row
           m='0 7vw'
           p='1vw 6vw'
-          backgroundColor='rgba(0,0,0,.8)'
+          backgroundColor='rgba(0,0,0,.9)'
           border='1px solid'
+          borderRadius='10px'
         >Happy Wife Junk Service can haul just about any kind of junk you can imagine. From large mirrors and windows, to old planks of wood, to bulky mattresses and couches, we've got you covered. The only junk we can't handle are hazardous materials, since they require a specialized form of disposal. We break up our junk disposal options into two main categories: Commercial junk and Residential junk removal</Row>
 
         <Row
@@ -40,8 +41,9 @@ export default function Services() {
             p='2vw'
             gap='3vw'
             alignItems='center'
-            backgroundColor='rgba(0,0,0,.8)'
+            backgroundColor='rgba(0,0,0,.9)'
             border='1px solid'
+            borderRadius='10px'
           >
             <Title>Commercial Junk Removal</Title>
             <Row>Construction sites, office spaces, and warehouses can benefit greatly from hiring professional junk haulers to handle their garbage or unwanted materials. It's important for businesses to keep their office spaces looking uncluttered and tidy, and it can be a challenge to clear out rooms full of old computers, monitors, tables, office furnishings, etc. Construction crews will rest easy knowing that their accumulated debris will not overflow into neighboring yards, which could warrant hefty fines.</Row>
@@ -52,8 +54,9 @@ export default function Services() {
             p='2vw'
             gap='3vw'
             alignItems='center'
-            backgroundColor='rgba(0,0,0,.8)'
+            backgroundColor='rgba(0,0,0,.9)'
             border='1px solid'
+            borderRadius='10px'
           >
             <Title>Residential Junk Removal</Title>
             <Row>We do our best to keep our homes clean and tidy, but it's common for junk to accumulate in the storage spaces of our homes. Old exercise equipment, not quite broken tv sets from the 80s, boxes of clothes that we've given up finding an occasion to wear; it's in these moments that our junk removal crew will be there to give you a hand. The experts at Happy Wife Junk Removal are always sure to treat your home with respect and will never track dirt into your living spaces.

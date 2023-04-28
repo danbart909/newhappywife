@@ -15,7 +15,8 @@ export default function AboutUs() {
         p='2vh 0'
         gap='2vh'
         border='1px solid'
-        backgroundColor='rgba(0,0,0,.8)'
+        borderRadius='10px'
+        backgroundColor='rgba(0,0,0,.9)'
         color={C1}
       >
         <Title>{titles[i]}</Title>

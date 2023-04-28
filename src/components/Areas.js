@@ -91,6 +91,7 @@ const City = (props) => {
     m='.5vw 1vw'
     p='.5vw'
     border='1px solid'
+    borderRadius='10px'
     backgroundColor='rgba(0,0,0,.8)'
     style={{ transition: '0.5s' }}
     sx={{ '&:hover': { backgroundColor: C2 } }}

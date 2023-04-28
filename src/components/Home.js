@@ -58,6 +58,7 @@ export default function Home() {
               <Title
                 p='1vw'
                 border='1px solid'
+                borderRadius='10px'
                 // backgroundColor={C2}
                 color={C1}
                 style={{ transition: '0.5s' }}
@@ -74,6 +75,7 @@ export default function Home() {
               <Title
                 p='1vw'
                 border='1px solid'
+                borderRadius='10px'
                 // backgroundColor={C2}
                 color={C1}
                 style={{ transition: '0.5s' }}
@@ -98,15 +100,48 @@ export default function Home() {
         </Row>
       </Row>
 
+      <Col
+        m='6vw 6vw 0'
+        p='1vw 6vw'
+        gap='2vw'
+        justifyContent='center'
+        textAlign='center'
+        backgroundColor='rgba(0,0,0,.9)'
+        color={C1}
+        border='1px solid'
+        borderRadius='10px'
+      >
+        <Row
+          justifyContent='center'
+          textAlign='center'
+        >Welcome to Happy Wife Junk Service! We provide junk removal service to the public mostly on Tuesdays and Saturdays.</Row>
+        <Row
+          justifyContent='center'
+          textAlign='center'
+        >If you need something recycled, please seek out <a href='https://www.google.com/search?q=recycling+center+cobb+county'><Row pl='7px'>recycling services</Row></a>.</Row>
+      </Col>
+
+      {/* <Row
+        m='4vw 10vw 0'
+        p='1vw 6vw'
+        justifyContent='center'
+        textAlign='center'
+        backgroundColor='rgba(0,0,0,.9)'
+        color={C1}
+        border='1px solid'
+        borderRadius='10px'
+      >Welcome to Happy Wife Junk Service! We provide junk removal service to the public mostly on Tuesdays and Saturdays.</Row>
+
       <Row
         m='4vw 10vw 0'
         p='1vw 6vw'
         justifyContent='center'
         textAlign='center'
-        backgroundColor='rgba(0,0,0,.8)'
+        backgroundColor='rgba(0,0,0,.9)'
         color={C1}
         border='1px solid'
-      >Welcome to Happy Wife Junk Service! We provide junk removal service to the public mostly on Tuesdays and Saturdays.</Row>
+        borderRadius='10px'
+      >If you need something recycled, please seek out <a href='https://www.google.com/search?q=recycling+center+cobb+county'><Row pl='7px'>recycling services</Row></a>.</Row> */}
 
       <Col
         m='6vw 0 0 0'

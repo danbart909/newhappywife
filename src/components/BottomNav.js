@@ -14,7 +14,7 @@ export default function BottomNav() {
   ]
 
   const xLink = {
-    flex: 1,
+    flex: 3,
     height: '100%',
     textDecoration: 'none',
     backgroundColor: C1,
@@ -23,7 +23,7 @@ export default function BottomNav() {
   }
 
   const activeLink = {
-    flex: 1,
+    flex: 3,
     height: '100%',
     textDecoration: 'none',
     backgroundColor: C2,
@@ -72,7 +72,7 @@ export default function BottomNav() {
         border='1px solid'
       >
         <Link href='http://www.facebook.com/happywifejunkservice' target='_blank' style={{ color: C2 }}><i className='fab fa-facebook' role='link'/></Link>
-        <Link href='https://g.page/HappyWife?gm' target='_blank' style={{ color: C2 }}><i className='fab fa-google' role='link'/></Link>
+        {/* <Link href='https://g.page/HappyWife?gm' target='_blank' style={{ color: C2 }}><i className='fab fa-google' role='link'/></Link> */}
       </Row>
     </Row>
   )

@@ -35,8 +35,9 @@ export const TitleBox = (props) => {
     p='4vh'
     width='75%'
     justifyContent='center'
-    backgroundColor='rgba(0,0,0,.8)'
+    backgroundColor='rgba(0,0,0,.9)'
     color={C1}
     border='1px solid'
+    borderRadius='10px'
   >{props.children}</Box>
 }

@@ -43,8 +43,9 @@ export default function Pricing() {
         <Row
           m='0 0 4vw'
           width='95%'
-          backgroundColor='rgba(0,0,0,.8)'
+          backgroundColor='rgba(0,0,0,.9)'
           border='1px solid'
+          borderRadius='10px'
           // justifyContent='space-evenly'
         >
           <Col
@@ -72,6 +73,7 @@ export default function Pricing() {
                 setPic2(pile2)
               }}
               border='1px solid'
+              borderRadius='10px'
               style={{ transition: '0.5s' }}
               sx={{ '&:hover': {
                 backgroundColor: C2
@@ -87,6 +89,7 @@ export default function Pricing() {
                 setPic2(pile3)
               }}
               border='1px solid'
+              borderRadius='10px'
               style={{ transition: '0.5s' }}
               sx={{ '&:hover': {
                 backgroundColor: C2
@@ -102,6 +105,7 @@ export default function Pricing() {
                 setPic2(pile4)
               }}
               border='1px solid'
+              borderRadius='10px'
               style={{ transition: '0.5s' }}
               sx={{ '&:hover': {
                 backgroundColor: C2

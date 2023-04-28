@@ -31,6 +31,7 @@ export default function BookNow() {
           backgroundColor='rgba(0,0,0,.8)'
           alignItems='center'
           border='1px solid'
+          borderRadius='10px'
         >
           {/* <Row>Our Phone Number is 762.217.3303. Please text or leave a message if there is no answer.</Row> */}
           <Row>Our email is henry@prettygoodinc.com</Row>
